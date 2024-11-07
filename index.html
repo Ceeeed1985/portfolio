@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cédric Truyen | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1100">
                 Cédric <span>Truyen</span>
             </div>
             <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500"><a href="#contact">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Service</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -37,20 +38,21 @@
 
     <section>
         <div class="main-container">
-            <div class="image">
+            <div class="image" data-aos="zoom-in" data-aos-duration="2500">
                 <img src="assets/images/main.jpeg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left">Hello World, I'm <span>Cédric</span></h1>
-                <div class="typewriter">I'm <span class="typewriter-text">Full Stack Web Developer</span><label for="">|</label></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reprehenderit natus hic fugiat libero minus omnis laboriosam neque voluptates, iure minima veniam, similique illum velit atque dolore laborum, odit qui?.</p>
+                <h1 data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700">Hello World, I'm <span>Cédric</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900">&lt; I'm <span class="typewriter-text"></span><label for=""> &gt; </label></div>
+                <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100">Vous avez un projet de création de site Web professionnel ? Ou d'un nouveau logo ? <br>Ou peut-être avez vous besoin de coommuniquer avec plus d'impacts sur vos réseaux ? <br>Ou encore, peut-être avez-vous besoin de conseils en gestion de projets au sein d'un organisation Agile ? <br><br>
+                Si tel est le cas, je peux très certainement vous aider.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1700">
                     <button>Contactez-moi</button>
                 </div>
             </div>
@@ -61,40 +63,40 @@
 
     <section class="about" id="about">
         <div class="content">
-            <div class="title"><span>About Me</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>About Me</span></div>
             <div class="about-details">
-                <div class="left">
+                <div class="left" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
                     <img src="assets/images/main.jpeg" alt="">
                 </div>
                 <div class="right">
-                    <p class="about-text">I am <span>Cédric</span> and i am <span> Full Stack Web Developper. </span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolorum animi rem, porro perferendis dolore accusamus autem at soluta quas doloremque esse tempore aliquam quos.</p>
+                    <p class="about-text" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200">I am <span>Cédric</span> and i am <span> Full Stack Web Developper. </span>Au cours de ma carrière, j'ai eu l'occasion de travailler dans de nombreux secteurs, dont la communication, et le management. Ce n'est que tardivement que j'ai commencé à travailler dans le développement web, afin de pouvoir couvrir tous les aspects relatifs au développement de la communication au sein des entreprises. Ainsi, je peux réaliser <span>vos logos</span>, vos <span>sites web</span>, mais aussi rédiger des articles de blogs, des communications facebook/X/Instragram. <br><br> Enfin, vous pouvez également compter sur mes compétences en tant que Scrum Master, pour des projets de développement au sein de votre enterprise.</p>
                     <div class="exp-area">
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                             Experience :
                             <span>15 Years</span>
                         </p>
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
                             Speciality :
-                            <span>Full Stack Web Developer</span>
+                            <span>Full Stack Web Developer, Design, Communication, Rédaction d'articles, Conseils</span>
                         </p>
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
                             Address :
                             <span>Belgium</span>
                         </p>
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">
                             Email :
                             <span>cedrictruyen@gmail.com</span>
                         </p>
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="700">
                             Phone :
                             <span>++32 478 46 53 73</span>
                         </p>
-                        <p class="exp">
+                        <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="800">
                             Freelance :
-                            <span>Available</span>
+                            <span>Disponible</span>
                         </p>
                     </div>
-                    <div class="button">
+                    <div class="button" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="900">
                         <button>View All Projects</button>
                     </div>
                 </div>
@@ -103,15 +105,15 @@
     </section>
 
     <!-- Début de la section Skills -->
-    <section class="skills" id=""skills>
+    <section class="skills" id="skills">
         <div class="content">
-            <div class="title"><span>My Skills</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Skills</span></div>
             <div class="skills-details">
                 <div class="text">
-                    <div class="topic">Parce que nos compétences sont le reflet de nos expériences</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis voluptates veniam iusto aperiam nulla aliquam dolores doloribus consectetur perferendis inventore ut quo aut atque, dignissimos odit culpa in officiis!</p>
-                    <div class="experience">
-                        <div class="num">10</div>
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">Parce que nos compétences sont le reflet de nos expériences</div>
+                    <p data-aos="flip-down" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis voluptates veniam iusto aperiam nulla aliquam dolores doloribus consectetur perferendis inventore ut quo aut atque, dignissimos odit culpa in officiis!</p>
+                    <div class="experience" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
+                        <div class="num">15</div>
                         <div class="exp">
                             Years Of <br>
                             Experience
@@ -119,21 +121,29 @@
                     </div>
                 </div>
                 <div class="boxes">
-                    <div class="box">
-                        <div class="topic">HTML</div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="400">
+                        <div class="topic">HTML/CSS</div>
                         <div class="per">85%</div>
                     </div>
-                    <div class="box">
-                        <div class="topic">CSS</div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="500">
+                        <div class="topic">PHP</div>
                         <div class="per">75%</div>
                     </div>
-                    <div class="box">
-                        <div class="topic">PHP</div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="600">
+                        <div class="topic">Javascript</div>
                         <div class="per">60%</div>
                     </div>
-                    <div class="box">
-                        <div class="topic">Javascript</div>
-                        <div class="per">25%</div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+                        <div class="topic">Laravel</div>
+                        <div class="per">50%</div>
+                    </div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="600">
+                        <div class="topic">Indesign</div>
+                        <div class="per">90%</div>
+                    </div>
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+                        <div class="topic">Photoshop / Illustrator</div>
+                        <div class="per">60%</div>
                     </div>
                 </div>
             </div>
@@ -143,44 +153,44 @@
     <!-- Début de la section Service -->
     <section class="services" id="services">
         <div class="content">
-            <div class="title"><span>My Services</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Services</span></div>
             <div class="boxes">
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
                     <div class="icon">
                         <i class="fas fa-desktop"></i>
                     </div>
                     <div class="topic">Web Devlopment</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum delectus doloremque molestias officiis, quo tempora exercitationem vero quas magnam, alias reiciendis eaque dolorem quos dolor!</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
                     <div class="icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
                     <div class="topic">Communication & Graphic Design</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum delectus doloremque molestias officiis, quo tempora exercitationem vero quas magnam, alias reiciendis eaque dolorem quos dolor!</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">
                     <div class="icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="topic">Communication & Digital Marketing</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum delectus doloremque molestias officiis, quo tempora exercitationem vero quas magnam, alias reiciendis eaque dolorem quos dolor!</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
                     <div class="icon">
                         <i class="fas fa-computer"></i>
                     </div>
                     <div class="topic">Content Marketing</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum delectus doloremque molestias officiis, quo tempora exercitationem vero quas magnam, alias reiciendis eaque dolorem quos dolor!</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="300">
                     <div class="icon">
                         <i class="fas fa-camera-retro"></i>
                     </div>
                     <div class="topic">Videos & Photography</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum delectus doloremque molestias officiis, quo tempora exercitationem vero quas magnam, alias reiciendis eaque dolorem quos dolor!</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="300">
                     <div class="icon">
                         <i class="fas fa-chess"></i>
                     </div>
@@ -194,24 +204,26 @@
     <!-- Début de la section Contact -->
     <section class="contact" id="contact">
         <div class="content">
-            <div class="title"><span>Contact Me</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>Contact Me</span></div>
             <div class="text">
-                <div class="topic">Have Any Project ?</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nesciunt amet recusandae quas fugit, culpa voluptatum nisi molestiae dolores minima incidunt rerum. Libero impedit hic iste repellat beatae rem tenetur.</p>
+                <div class="topic" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">Have Any Project ?</div>
+                <p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nesciunt amet recusandae quas fugit, culpa voluptatum nisi molestiae dolores minima incidunt rerum. Libero impedit hic iste repellat beatae rem tenetur.</p>
             </div>
             <div class="contact-form-container">
                 <div class="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
 
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    <label for="phone" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
                     
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit" class="contact-btn">Send Message</button>
+                    <label for="message" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"></textarea>
+                    
+                    <button type="submit" class="contact-btn" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">Send Message</button>
                 </div>
             </div>
         </div>
@@ -226,5 +238,62 @@
     </footer>
     
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({offset:0});
+    </script>
+
+
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = 'translateY(0px)';
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = 'translateY(-500px)';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const texts = ["Web Developer", "Designer", "Scrum Master", "Ready to help You"]; // Liste des textes à afficher
+    const typewriterText = document.querySelector(".typewriter-text");
+    let textIndex = 0; // Index pour suivre le texte actuel
+    let charIndex = 0; // Index pour suivre la position de caractère dans le texte actuel
+    let isDeleting = false; // Indicateur pour savoir si on est en phase de suppression
+
+    function typeEffect() {
+        const currentText = texts[textIndex];
+        if (isDeleting) {
+            // Effacer les caractères un à un
+            typewriterText.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                // Passage au texte suivant
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length; // Boucle entre les textes
+                setTimeout(typeEffect, 500); // Petite pause avant de commencer à écrire
+            } else {
+                setTimeout(typeEffect, 50); // Vitesse d'effacement
+            }
+        } else {
+            // Écrire les caractères un à un
+            typewriterText.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === currentText.length) {
+                // Une fois le texte écrit, déclencher la phase de suppression
+                isDeleting = true;
+                setTimeout(typeEffect, 1500); // Pause avant de commencer à effacer
+            } else {
+                setTimeout(typeEffect, 100); // Vitesse d'écriture
+            }
+        }
+    }
+
+    typeEffect(); // Démarre l'animation
+});
+
+    </script>
 </body>
 </html>
